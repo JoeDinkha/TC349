@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Joe Dinkha</title>
+        <meta name="The Homepage of Joe Dinkha" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+			<h1>Joe Dinkha</h1>
+			<h2>CSE | East Lansing, MI</h2>
+		</header>
+		<div id="map-location" style="height:299px;" data-0="background-image:url('img/custom_map.jpg');opacity:.5;"
+		data-500="background-image: url('img/custom_map_bw.jpg');opacity:1;">
+		</div>
+		<nav data-0="position:absolute;top:900px;"
+		data-800="position:absolute;top:900px;"
+		data-1500="position:absolute;top:1550px;">
+			<ul>
+				<li><a href="#about"><b>About</b></li>
+				<li><a href="#portfolio"><b>Portfolio</b></li>
+				<li><a href="#books"><b>Books</b></li>
+				<li><a href="#contact"><b>Contact</b></a></li>
+			</ul>
+		</nav>
+		<article>
+			<section id="about">
+			<h3>About Joe</h3>
+			<p>Hey there, my name is Joe Dinkha, I am a junior at MSU going into Computer Science & Engineering. Quite surprisingly out of all the programming I've done, I've only worked with web design during high school and minor edits to my cultural club's MSU website. As a computer enthusiast and aspiring programmer, I prefer to use a coding IDE with a robust and convenient GUI. This includes software like Netbeans, Dreamweaver, and others of the like. However, I do want to get better and primarily go straight to source code when it comes to website creation. Thus, I have downloaded Notepad++ and tried to construct this website by hand as much as possible. It is not much but I am hopefully trying to get my web and software programming skills to complement each other.</p>
+			</section>
+			
+			<section id="portfolio">
+			<h3>Portfolio Photos</h3>
+			<ul class = "gallery">
+			<li><img src ="img/portfolio.png"></li>
+			</ul>
+			</section>
+			
+			<section id="books">
+			<h3>My Books</h3>
+			<p>To be completely honest I do not read much, but I will be doing a lot this summer. It will be on coding standard and coding interview questions. I am trying to train myself to think more technical and have efficient methods of algorithms in my head.  I do want to get into reading books that are based on my favorite movies and video games.  This includes comic books, some of my favored ones being Nintendo game comics.</p>
+			</section>
+			
+			<section id="contact">
+			<h3>Contact</h3>
+			<p> Contact me at JoeDinkha@Gmail.com or DinkhaJo@MSU.edu </p>
+			</section>
+		</article>
+		
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/skrollr.menu.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		
+		<script type="text/javascript">
+			var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    easing: 'sqrt',
+
+    //Multiply your data-[offset] values so they match those set in skrollr.init
+    scale: 2,
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 500;
+
+        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+        //return Math.abs(currentTop - targetTop) * 10;
+    },
+
+    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+    //handleLink: function(link) {
+       // return 400;//Hardcoding 400 doesn't make much sense.
+   // }
+});
+		</script>
+    </body>
+</html>
